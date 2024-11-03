@@ -1,0 +1,138 @@
+body {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    border-color: black;
+}
+
+#header {
+    background-color: green;
+    text-align: center;
+    border: 1px solid;
+    width: 100%;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+#header td {
+    cursor: pointer;
+}
+
+#header table {
+    margin-left: 0px;
+    padding: 5px;
+}
+
+#header td {
+    margin: 5px, 0px, 5px, 0px;
+}
+
+#content {
+    padding: 5px;
+    width: 100%;
+}
+
+#content table{
+    width: 100%;
+}
+
+#content td {
+    padding: 5px;
+}
+
+#leftPanel {
+    text-align: center;
+    background-color: tan;
+    border: 1px solid;
+    border-radius: 15px;
+    width: 33%;
+    height: 500px;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+#leftPanel:hover {
+    transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+}
+
+#leftPanel p {
+    text-align: left;
+}
+#leftPanel ul {
+    text-align: left;
+}
+
+#middlePanel {
+    text-align: center;
+    background-color: blanchedalmond;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 5px, 5px, 5px, 0px;
+    padding: 5px;
+    width: 33%;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+#middlePanel p {
+    text-align: left;
+    padding: 5px;
+}
+
+#middlePanel ul {
+    text-align: left;
+}
+
+#middlePanel:hover {
+    transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+}
+
+#rightPanel {
+    text-align: center;
+    background-color: burlywood;
+    border: 1px solid;
+    border-radius: 15px;
+    width: 33%;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+#rightPanel:hover {
+    transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+}
+
+#footer {
+    background-color: #495867;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#iunThumbnail {
+    height: 100px;
+    width: 100px;
+}
+
+#buttonsPic {
+    border-radius: 15px;
+}
+
+
+#footer td {
+    width: 5%;
+    text-align: center;
+}

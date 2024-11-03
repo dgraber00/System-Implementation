@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open main.html",
-            "file": "/Users/daltongraber/Documents/GitHub/System-Implementation/src/main.html"
+            "name": "Open homescreen.html",
+            "file": "/Users/daltongraber/Documents/GitHub/System-Implementation/src/homescreen.html"
         }
     ]
 }
