@@ -26,10 +26,10 @@ Tyler Yocom-->
 
         <table>
             <tr>
-                <td>Sign In</td>
+                <td data-url="signIn.html">Sign In</td>
                 <td data-url = "homescreen.html">Home</td>
-                <td>Showings</td>
-                <td>About Us</td>
+                <td data-url="showings.html">Showings</td>
+                <td data-url="aboutUs.html">About Us</td>
                 <td data-url = "signUp.html">Sign Up</td>
             </tr>
         </table>
@@ -62,17 +62,34 @@ Tyler Yocom-->
                     <hr>
                     <h3>Sign up today!</h3>
                 </td>
-                <td id = "middlePanel">
+                <td id = "middlePanel" data-url="showings.html">
                     <h2>Showings</h2>
                     <hr>
-
+                    <div id="images">
+                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/Titanic (1997).png">
+                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/E.T. img.png">
+                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/WizardOfOz.png">
+                    </div>
                 </td>
-                <td id = "rightPanel">
+                <td id = "rightPanel" data-url="aboutUs.html">
                     <h2>About Us</h2>
                     <hr>
+                    <p>Learn more about us!</p>
                 </td>
             </tr>
         </table>
+
+        <script type="text/javascript">
+		
+			document.querySelectorAll("td").forEach(function(cell) {
+				cell.addEventListener("click", function() {
+					url = this.getAttribute("data-url");
+					window.location.href = url;
+				});
+			});
+		
+		</script>
+
     </div>
 
     <div id = "footer">

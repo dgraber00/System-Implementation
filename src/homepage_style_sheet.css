@@ -90,6 +90,16 @@ hr {
     text-align: left;
 }
 
+#images {
+    display: flex;
+}
+
+#middlePanel img {
+    width: 150px;
+    height: 150px;
+    padding: 2px;
+}
+
 #middlePanel:hover {
     transform: scale(1.2);
         -moz-transform: scale(1.2);
