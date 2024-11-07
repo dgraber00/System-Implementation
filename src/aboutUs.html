@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--Dalton Graber,
+Jack Ventura,
+Tyler Yocom-->
+<html>
+
+<head>
+    <title>Book-a-Seat About Us</title>
+    <meta name="keywords" content="Book-A-Seat, Movie Theater seats, seat tickets, about us">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="about_us_stylesheet.css">
+</head>
+
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript">
+    
+</script>
+
+<body>
+    <div id="header">
+        <h1>Book-a-Seat About Us</h1>
+
+        <table>
+            <tr>
+                <td data-url="signIn.html">Sign In</td>
+                <td data-url="homescreen.html">Home</td>
+                <td data-url="showings.html">Showings</td>
+                <td data-url="aboutUs.html">About Us</td>
+                <td data-url="signUp.html">Sign Up</td>
+            </tr>
+        </table>
+
+        <script type="text/javascript">
+		
+			document.querySelectorAll("td").forEach(function(cell) {
+				cell.addEventListener("click", function() {
+					url = this.getAttribute("data-url");
+					window.location.href = url;
+				});
+			});
+		
+		</script>
+    </div>
+
+    <div id="content">
+        <h2>About Us</h2>
+        <hr>
+
+        <div id="imgDiv">
+            <img id="IUimg" src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/IU.png" alt="IU" title="IU">
+        </div>
+        
+        <p>
+            The creators of this app are students from IU creating a software that allows you to rent movie tickets.
+            Their names are Dalton Graber, Jack Ventura, and Tyler Yocom. We started this project
+            due to our local movie theater shutting down. We all have a special love for movies and want
+            to see the industry thrive where we live. We hope to make our neighborhood into a theater
+            hub.
+        </p>
+    </div>
+
+    <div id="footer">
+        <table>
+            <tr>
+                <td>
+                    <p style="text-align: left">Office:</p>
+
+                    <ul style="text-align: left">
+                        <li>Crown Point, Indiana</li>
+                        <li>Phone: (219)-XXX-XXXX</li>
+                        <li>Email: <a href="mailto:dagraber@iu.edu" title="Contact Me">Book-a-Seat@gmail.com
+                                <i class="fas fa-envelope"></i></a>
+                        </li>
+                        <li>Homepage: <a href="https://github.com/dgraber00/System-Implementation">Link</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <img id="buttonsPic"
+                        src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/buttons.png">
+                </td>
+                <td>
+                    <img id="iunThumbnail"
+                        src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/IUN.png">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

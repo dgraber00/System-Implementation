@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--Dalton Graber,
+Jack Ventura,
+Tyler Yocom-->
+<html>
+
+<head>
+    <title>Book-a-Seat Showings</title>
+    <meta name="keywords" content="Book-A-Seat, Movie Theater seats, seat tickets, showings">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="showings_style_sheet.css">
+</head>
+
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript">
+    function promptForMovie(id) {
+        movieData = {
+            'movie1': {
+                title: "Titanic",
+                description: "A love story set during the ill-fated voyage of the RMS Titanic.",
+                trailerLink: "https://www.youtube.com/watch?v=kVrqfYjkTdQ",
+            },
+            'movie2': {
+                title: "E.T. the Extra-Terrestrial",
+                description: "A young boy befriends an extraterrestrial being who is stranded on Earth.",
+                trailerLink: "https://www.youtube.com/watch?v=qYAETtIIClk"
+            },
+            'movie3': {
+                title: "The Wizard of Oz",
+                description: "A young girl from Kansas is transported to the magical land of Oz where she must find her way home.",
+                trailerLink: "https://www.youtube.com/watch?v=H_3T4DGw10U"
+            }
+        };
+
+        // Get movie details based on ID
+        const movie = movieData[id];
+
+        // Update modal content
+        document.getElementById("movieTitle").innerText = movie.title;
+        document.getElementById("movieDescription").innerText = movie.description;
+        document.getElementById("movieTrailer").href = movie.trailerLink;
+
+        // Show the modal
+        document.getElementById("movieModal").style.display = "block";
+    }
+
+    // Close the modal
+    function closeModal() {
+        document.getElementById("movieModal").style.display = "none";
+    }
+
+    // Reserve seat action
+    function reserveSeat() {
+        alert("Seat reserved for the movie!");
+        closeModal();
+    }
+</script>
+
+<body>
+    <div id="header">
+        <h1>Book-a-Seat</h1>
+
+        <table>
+            <tr>
+                <td data-url="signIn.html">Sign In</td>
+                <td data-url="homescreen.html">Home</td>
+                <td data-url="showings.html">Showings</td>
+                <td data-url="aboutUs.html">About Us</td>
+                <td data-url="signUp.html">Sign Up</td>
+            </tr>
+        </table>
+
+        <script type="text/javascript">
+		
+			document.querySelectorAll("td").forEach(function(cell) {
+				cell.addEventListener("click", function() {
+					url = this.getAttribute("data-url");
+					window.location.href = url;
+				});
+			});
+		
+		</script>
+    </div>
+
+    <div id="content">
+        <div id="genre">
+            <h2>Genre</h2>
+
+            <table>
+                <tr>
+                    <td>Action</td>
+                </tr>
+                <tr>
+                    <td>Comedy</td>
+                </tr>
+                <tr>
+                    <td>Crime</td>
+                </tr>
+                <tr>
+                    <td>Horror</td>
+                </tr>
+                <tr>
+                    <td>Romance</td>
+                </tr>
+                <tr>
+                    <td>Sci-Fi</td>
+                </tr>
+                <tr>
+                    <td>Thriller</td>
+                </tr>
+            </table>
+        </div>
+        <div id="mainContent">
+            <h2>Showings</h2>
+
+            <table>
+                <tr>
+                    <td id="movie1" onclick="promptForMovie('movie1')">
+                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/Titanic (1997).png">
+                        <h2>Titanic</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="movie2" onclick="promptForMovie('movie2')">
+                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/E.T. img.png">
+                        <h2>E.T. the Extra-Terrestrial</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="movie3" onclick="promptForMovie('movie3')">
+                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/WizardOfOz.png">
+                        <h2>The Wizard of Oz</h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="movieTitle"></h2>
+            <p id="movieDescription"></p>
+            <a id="movieTrailer" href="" target="_blank">Watch Trailer</a>
+            <br><br>
+            <button class="reserve-btn" onclick="reserveSeat()">Reserve Seat</button>
+        </div>
+    </div>
+
+    <div id="footer">
+        <table>
+            <tr>
+                <td>
+                    <p style="text-align: left">Office:</p>
+
+                    <ul style="text-align: left">
+                        <li>Crown Point, Indiana</li>
+                        <li>Phone: (219)-XXX-XXXX</li>
+                        <li>Email: <a href="mailto:dagraber@iu.edu" title="Contact Me">Book-a-Seat@gmail.com
+                                <i class="fas fa-envelope"></i></a>
+                        </li>
+                        <li>Homepage: <a href="https://github.com/dgraber00/System-Implementation">Link</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <img id="buttonsPic"
+                        src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/buttons.png">
+                </td>
+                <td>
+                    <img id="iunThumbnail"
+                        src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/IUN.png">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
