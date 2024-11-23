@@ -31,6 +31,7 @@ hr {
 }
 
 #content {
+    flex: 1;
     display: flex;
     padding: 5px;
     width: 100%;
@@ -90,7 +91,7 @@ hr {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
@@ -151,6 +152,8 @@ hr {
     border-radius: 15px;
     padding: 5px;
     bottom: 0;
+    position: relative;
+    z-index: 1;
 }
 
 #iunThumbnail {
