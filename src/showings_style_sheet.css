@@ -78,6 +78,7 @@ hr {
 #mainContent td {
     padding: 20px;
     cursor: pointer;
+    text-align: center;
 }
 
 #mainContent td img {

@@ -20,20 +20,40 @@ Tyler Yocom-->
     function promptForMovie(id) {
         movieData = {
             'movie1': {
-                title: "Titanic",
-                description: "A love story set during the ill-fated voyage of the RMS Titanic.",
-                trailerLink: "https://www.youtube.com/watch?v=kVrqfYjkTdQ",
+                title: "Mission: Impossible Fallout",
+                description: "Mission: Impossible - Fallout is a high-octane action thriller where Ethan Hunt must stop a nuclear catastrophe while facing personal betrayal, dangerous adversaries, and the relentless pursuit of the impossible.",
+                trailerLink: "https://www.youtube.com/watch?v=wb49-oV0F78",
             },
             'movie2': {
-                title: "E.T. the Extra-Terrestrial",
-                description: "A young boy befriends an extraterrestrial being who is stranded on Earth.",
-                trailerLink: "https://www.youtube.com/watch?v=qYAETtIIClk"
-            },
-            'movie3': {
                 title: "The Wizard of Oz",
                 description: "A young girl from Kansas is transported to the magical land of Oz where she must find her way home.",
-                trailerLink: "https://www.youtube.com/watch?v=H_3T4DGw10U"
-            }
+                trailerLink: "https://www.youtube.com/watch?v=H_3T4DGw10U",
+            },
+            'movie3': {
+                title: "Taken",
+                description: "Taken is a tense action thriller in which a former CIA operative must use his specialized skills to rescue his daughter after she is kidnapped by human traffickers in Paris.",
+                trailerLink: "https://www.youtube.com/watch?v=XK9zL0ze9O4",
+            },
+            'movie4': {
+                title: "It",
+                description: "It is a horror film where a group of children must confront a shape-shifting entity that feeds on their fears, while battling an ancient evil that has terrorized their town for decades.",
+                trailerLink: "https://www.youtube.com/watch?v=xKJmEC5ieOk",
+            },
+            'movie5': {
+                title: "The Wizard of Oz",
+                description: "A young girl from Kansas is transported to the magical land of Oz where she must find her way home.",
+                trailerLink: "https://www.youtube.com/watch?v=H_3T4DGw10U",
+            },
+            'movie6': {
+                title: "E.T. the Extra-Terrestrial",
+                description: "A young boy befriends an extraterrestrial being who is stranded on Earth.",
+                trailerLink: "https://www.youtube.com/watch?v=qYAETtIIClk",
+            },
+            'movie7': {
+                title: "The Wizard of Oz",
+                description: "A young girl from Kansas is transported to the magical land of Oz where she must find her way home.",
+                trailerLink: "https://www.youtube.com/watch?v=H_3T4DGw10U",
+            },
         };
 
         // Get movie details based on ID
@@ -119,21 +139,85 @@ Tyler Yocom-->
 
             <table>
                 <tr>
-                    <td id="movie1" onclick="promptForMovie('movie1')">
+                    <td>
+                        <h3 style = "text-align: center;">Action</h3>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="movie3" onclick="promptForMovie('movie1')">
+                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/actionMovie.png">
+                        <h2>Mission: Impossible Fallout</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3 style = "text-align: center;">Comedy</h3>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="movie3" onclick="promptForMovie('movie2')">
+                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/WizardOfOz.png">
+                        <h2>The Wizard of Oz</h2>
+                    </td>
+                </tr>
+                <td>
+                    <h3 style = "text-align: center;">Crime</h3>
+                    <hr>
+                </td>
+                </tr>
+                <tr>
+                    <td id="movie3" onclick="promptForMovie('movie3')">
+                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/crimeMovie.png">
+                        <h2>Taken</h2>
+                    </td>
+                </tr>
+                <td>
+                    <h3 style = "text-align: center;">Horror</h3>
+                    <hr>
+                </td>
+                </tr>
+                <tr>
+                    <td id="movie3" onclick="promptForMovie('movie4')">
+                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/horrorMovie.png">
+                        <h2>It</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3 style = "text-align: center;">Romance</h3>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="movie1" onclick="promptForMovie('movie5')">
                         <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/Titanic (1997).png">
                         <h2>Titanic</h2>
                     </td>
                 </tr>
                 <tr>
-                    <td id="movie2" onclick="promptForMovie('movie2')">
+                    <td>
+                        <h3 style = "text-align: center;">Sci-Fi</h3>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="movie2" onclick="promptForMovie('movie6')">
                         <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/E.T. img.png">
                         <h2>E.T. the Extra-Terrestrial</h2>
                     </td>
                 </tr>
                 <tr>
-                    <td id="movie3" onclick="promptForMovie('movie3')">
-                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/WizardOfOz.png">
-                        <h2>The Wizard of Oz</h2>
+                    <td>
+                        <h3 style = "text-align: center;">Thriller</h3>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="movie2" onclick="promptForMovie('movie7')">
+                        <img src="/Users/daltongraber/Documents/GitHub/System-Implementation/images/thrillerMovie.png">
+                        <h2>Alone</h2>
                     </td>
                 </tr>
             </table>
