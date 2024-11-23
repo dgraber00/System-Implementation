@@ -78,6 +78,57 @@ Tyler Yocom-->
         alert("Seat reserved for the movie!");
         closeModal();
     }
+
+    function reserveSeatModal() {
+        movieData = {
+            'movie1': {
+                title: "Mission: Impossible Fallout",
+                description: "Mission: Impossible - Fallout is a high-octane action thriller where Ethan Hunt must stop a nuclear catastrophe while facing personal betrayal, dangerous adversaries, and the relentless pursuit of the impossible.",
+                trailerLink: "https://www.youtube.com/watch?v=wb49-oV0F78",
+            },
+            'movie2': {
+                title: "The Wizard of Oz",
+                description: "A young girl from Kansas is transported to the magical land of Oz where she must find her way home.",
+                trailerLink: "https://www.youtube.com/watch?v=H_3T4DGw10U",
+            },
+            'movie3': {
+                title: "Taken",
+                description: "Taken is a tense action thriller in which a former CIA operative must use his specialized skills to rescue his daughter after she is kidnapped by human traffickers in Paris.",
+                trailerLink: "https://www.youtube.com/watch?v=XK9zL0ze9O4",
+            },
+            'movie4': {
+                title: "It",
+                description: "It is a horror film where a group of children must confront a shape-shifting entity that feeds on their fears, while battling an ancient evil that has terrorized their town for decades.",
+                trailerLink: "https://www.youtube.com/watch?v=xKJmEC5ieOk",
+            },
+            'movie5': {
+                title: "Titanic",
+                description: "Titanic is an epic romance and disaster film that chronicles the ill-fated voyage of the RMS Titanic, focusing on the love story between a young couple from different social classes as the ship tragically sinks.",
+                trailerLink: "https://www.youtube.com/watch?v=kVrqfYjkTdQ",
+            },
+            'movie6': {
+                title: "E.T. the Extra-Terrestrial",
+                description: "A young boy befriends an extraterrestrial being who is stranded on Earth.",
+                trailerLink: "https://www.youtube.com/watch?v=qYAETtIIClk",
+            },
+            'movie7': {
+                title: "Alone",
+                description: "Alone is a suspenseful thriller about a woman who, after being abducted and left for dead in the wilderness, must outwit her captor and survive in the harsh environment to escape.",
+                trailerLink: "https://www.youtube.com/watch?v=NoP2mJiCzWQ",
+            },
+        };
+
+        // Get movie details based on ID
+        const movie = movieData[id];
+
+        // Update modal content
+        document.getElementById("movieTitle").innerText = movie.title;
+        document.getElementById("movieDescription").innerText = movie.description;
+        document.getElementById("movieTrailer").href = movie.trailerLink;
+
+        // Show the modal
+        document.getElementById("movieModal").style.display = "block";
+    }
 </script>
 
 <body>
@@ -232,9 +283,21 @@ Tyler Yocom-->
             <p id="movieDescription"></p>
             <a id="movieTrailer" href="" target="_blank">Watch Trailer</a>
             <br><br>
+            <button class="reserve-btn" onclick="reserveSeatModal()">Reserve Seat</button>
+        </div>
+    </div>
+
+    <div id="reserveSeatModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="movieTitle"></h2>
+            <p id="movieDescription"></p>
+            <a id="movieTrailer" href="" target="_blank">Watch Trailer</a>
+            <br><br>
             <button class="reserve-btn" onclick="reserveSeat()">Reserve Seat</button>
         </div>
     </div>
+
 
     <div id="footer">
         <table>
