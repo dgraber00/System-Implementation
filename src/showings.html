@@ -87,9 +87,8 @@ Tyler Yocom-->
     }
 
     function submitReservation(event) {
-        event.preventDefault(); // Prevent form submission (no page reload)
+        event.preventDefault(); 
     
-        // Get customer details from the form
         const customerName = document.getElementById("customerName").value;
         const customerPhone = document.getElementById("customerPhone").value;
         const customerCardNumber = document.getElementById("customerCardNumber").value;
@@ -98,10 +97,8 @@ Tyler Yocom-->
         // You can now process the reservation and send the data to a server (if necessary)
         alert(`Reservation for ${customerName}\nPhone: ${customerPhone}\nCard Number: ${customerCardNumber}`);
     
-        // Close the customer info modal
         closeCustomerInfoModal();
     
-        // Optionally, show a confirmation or redirect
         alert("Thank you for your reservation!");
     }
 
@@ -285,7 +282,7 @@ Tyler Yocom-->
                 <input type="text" id="customerCardNumber" name="customerCardNumber" required><br><br>
 
                 <label for="customerTimeSlot">Time Slot:</label><br>
-                <input type="datetime" id="datetime" name="datetime" required><br><br>
+                <input type="datetime-local" id="datetime" name="datetime" required><br><br>
                 
                 <button type="submit" onclick="submitReservation()">Submit Reservation</button>
             </form>
