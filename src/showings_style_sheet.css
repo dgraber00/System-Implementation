@@ -35,6 +35,8 @@ hr {
     display: flex;
     padding: 5px;
     width: 100%;
+    position: relative;
+    z-index: 0;
 }
 
 #genre {
@@ -61,6 +63,7 @@ hr {
     background-color: #495867;
     overflow: auto;
     height: 800px;
+    z-index: 1;
 }
 
 #mainContent h2 {
@@ -85,19 +88,20 @@ hr {
 #mainContent td img {
     width: 250px;
     height: 250px;
-    image: center;
 }
 
 .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 1001;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 60px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -151,9 +155,8 @@ hr {
     height: 150px;
     border-radius: 15px;
     padding: 5px;
-    bottom: 0;
     position: relative;
-    z-index: 1;
+    z-index: -1;
 }
 
 #iunThumbnail {

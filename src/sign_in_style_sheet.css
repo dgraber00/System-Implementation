@@ -1,8 +1,12 @@
+body {
+    background-color: rgb(145, 12, 12);
+}
+
 #heading {
     text-align: center;
     width: 100%;
     margin-top: 100px;
-    color: rgb(145, 12, 12);
+    color: white;
 }
 
 #content {

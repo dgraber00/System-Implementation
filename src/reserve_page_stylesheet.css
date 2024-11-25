@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(145, 12, 12);
+}
+
+#heading {
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    width: 500px;
+}
+
+fieldset {
+    padding: 20px;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 10px;
+}
